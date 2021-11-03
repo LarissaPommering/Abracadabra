@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    background: rgb(240, 139, 25);
+}
+
+header img{
+    width: 78px;
+}
+
+header #pesquisa{
+    display: flex;
+    width: 100%;
+}
+
+header #busca{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    width: 80%;
+}
+header #busca input{
+    width: 70%;
+    height: 30px;
+    border-radius: 5px;
+    margin-left: 10px;
+    border: 0;
+
+    color: black;
+    font-size: 18px;
+
+    background-image: url(./Assets/lupa.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position-x: right;
+    background-position-y: center;
+    
+}
+
+header #busca p, header #filtro p{
+    width: 20%;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(255, 255, 255) et;
+    font-family: 'Work Sans', sans-serif;
+
+    margin: 0 10px 0 10px;
+}
+
+header #filtro{
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+
+    margin-right: 20px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    border: solid 2px;
+    border-radius: 5px;
+    height: 40px;
+
+    transition: 1s;
+}
+
+header #filtro img{
+    width: 30px;
+    margin: 0 10px 0 10px;
+}
+
+main #banner {
+    max-width: 90%;
+    margin: auto;
+    padding: 20px 0 20px 0;
+}
+
+main #banner p{
+    font-size: 24px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 10px;
+    color: #323232; 
+    font-weight: 700;
+}
+
+main #banner img {
+    width: 100%;
+    max-height: 600px;
+}
+
+main #banner #pedido{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: -500px 60px 0 60px;
+
+    z-index: 2;
+    margin-bottom: 400px;
+}
+
+main #banner #pedido #promocao p{
+    color: aliceblue;
+    max-width: 250px;
+}
+
+main #banner #pedido button{
+    background: rgb(240, 139, 25);
+    min-height: 60px;
+    min-width: 160px;
+    border-radius: 5px;
+    border: 0;
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 20px;
+
+    transition: 0.5s;
+}
+
+main #banner #pedido button:hover, header #filtro:hover{
+    cursor: pointer;
+    background: rgb(235, 181, 138);
+}
+
+main #conteudo{
+    max-width: 90%;
+    margin: 20px auto;
+}
+
+main #conteudo #titulo{
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+main #conteudo #produto{
+    display: flex;
+    flex-wrap: wrap-reverse;
+   
+}
+
+main #conteudo #produto .card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 48%;
+    height: 100px;
+    border:solid 2px #323232;
+    border-radius: 5px;
+
+    margin: 5px 5px;
+}
+
+main #conteudo #produto .card .lanche{
+    width: 250px;
+    height: 100%;
+
+}
+
+main #conteudo #produto .card .lanche img{
+    width: 100%;
+    height: 100%;
+}
+
+
+main #conteudo #produto .card img{
+    max-width: 100px;
+    height: 100%;
+}
+
+main #conteudo #produto .card .item{
+    margin: 0 5px 0 10px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main #conteudo #produto .card .item p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #323232;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 10px 0 ;
+}
+
+main #conteudo #produto .card .item .descricao{
+    font-weight: 400;
+}
+
+main #conteudo #produto .card .valor-qtd{
+    margin: auto 10px;
+}
+
+main #conteudo #produto .card .valor-qtd .valor{
+    color: rgb(240, 139, 25);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+main #conteudo #produto .card .valor-qtd .qtd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main #conteudo #produto .card .valor-qtd .qtd p{
+    width: 35px;
+    height: 35px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    background: rgb(240, 139, 25);
+    color: aliceblue;
+}
+
+main #conteudo #produto .card .valor-qtd .qtd .quantia{
+    background: rgb(179, 178, 178);
+    color: #323232;
+}
+
+main #conteudo #produto .card .valor-qtd .qtd .sub{
+    border-radius: 5px 0 0 5px;
+    cursor: pointer;
+}
+
+main #conteudo #produto .card .valor-qtd .qtd .add{
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background: rgb(240, 139, 25);;
+}
+
+footer img{
+    width: 110px;
+}
+
+footer #compra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: aliceblue ;
+    font-size: 24px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+footer #compra img{
+    width: 40px;
+}
+
+footer #compra #pedir, footer #compra #cadastrar{
+    border: 0;
+    border-radius: 5px;
+    height: 60px;
+    width: 200px;
+    color: aliceblue;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 20px 0;
+    cursor: pointer;
+   
+    transition: 0.5s;
+}
+
+footer #compra #pedir{
+    background:rgb(179, 178, 178);
+}
+
+
+footer #compra #cadastrar{
+    background: rgb(163, 255, 25);
+}
+
+footer #compra #cadastrar:hover{
+    background: rgb(145, 207, 52);;
+}
+
+footer #compra input{
+    width: 100%;
+    height: 40px;
+    border: 0;
+    border-radius: 5px;
+    margin: 10px 0;
+
+
+    background-image: url(./images/outline_email_black_24dp.png);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position-x: right;
+    background-position-y: center;
+}
+
+footer #links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer #links img{
+    width: 40px;
+    border-radius: 5px;
+    margin: 5px 0;
+
+    cursor: pointer;
+}
+
+
+
+
